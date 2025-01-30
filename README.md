@@ -29,11 +29,11 @@ This is a **Flask-based OCR (Optical Character Recognition) application** that e
 git clone https://github.com/yourusername/ocr-text-extraction.git
 ```
 
-2️⃣ Install Dependencies
+### 2️⃣ Install Dependencies
 ```
 pip install -r requirements.txt
 ```
-3️⃣ Install Tesseract OCR
+### 3️⃣ Install Tesseract OCR
 
 Windows: [Download Tesseract OCR](https://github.com/UB-Mannheim/tesseract/wiki)
 
@@ -43,7 +43,7 @@ sudo apt install tesseract-ocr
 Mac (Homebrew):
 brew install tesseract
 
-4️⃣ Set the Tesseract Path (Windows Only)
+### 4️⃣ Set the Tesseract Path (Windows Only)
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 5️⃣ Run the Application
