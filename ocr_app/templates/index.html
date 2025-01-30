@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR Application</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>OCR Text Extractor</h1>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".pdf,.jpg,.jpeg,.png" required>
+            <button type="submit">Extract Text</button>
+        </form>
+        
+        {% if extracted_text %}
+        <textarea readonly>{{ extracted_text }}</textarea>
+        <form action="/export" method="POST">
+            <input type="hidden" name="text" value="{{ extracted_text }}">
+            <button type="submit">Export as .txt</button>
+        </form>
+        {% endif %}
+    </div>
+</body>
+</html>
