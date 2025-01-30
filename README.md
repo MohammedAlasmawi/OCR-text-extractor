@@ -46,7 +46,7 @@ brew install tesseract
 ### 4️⃣ Set the Tesseract Path (Windows Only)
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-5️⃣ Run the Application
+### 5️⃣ Run the Application
 ```
 python app.py
 ```
