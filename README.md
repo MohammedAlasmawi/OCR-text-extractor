@@ -1,7 +1,7 @@
 # 📄 OCR Text Extraction App
 
 ## Overview
-This is a **Flask-based OCR (Optical Character Recognition) application** that extracts text from **PDF, JPEG, PNG, and JPG files** using **Tesseract OCR**. The app allows users to **upload a file, extract text, and export the result as a `.txt` file**.
+This is a **Flask-based OCR (Optical Character Recognition) application** that extracts text from **PDF** using **Tesseract OCR**. The app allows users to **upload a file, extract text, and export the result as a `.txt` file**.
 
 ---
 
